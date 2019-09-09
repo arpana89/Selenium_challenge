@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">MakeMyTrip</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">3</td><td class="num">67,475</td><td></td><td></td></tr></table><table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">MakeMyTrip &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.makeMyTrip.qa.testCases.FlightResultsPageTestCase</td><td><a href="#m0">SelectFlightAndValidateTotal</a></td><td rowspan="1">1568044310479</td><td rowspan="1">1371</td></tr><tr class="failedeven"><td><a href="#m1">ValidateNumberOfFlightWith_NonStop</a></td><td rowspan="1">1568044288951</td><td rowspan="1">11030</td></tr><tr class="failedeven"><td><a href="#m2">ValidateNumberOfFlightWith_OneStop</a></td><td rowspan="1">1568044299997</td><td rowspan="1">10477</td></tr><tr><th colspan="4">MakeMyTrip &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.makeMyTrip.qa.testCases.FlightResultsPageTestCase</td><td><a href="#m3">numberofFlights</a></td><td rowspan="1">1568044275596</td><td rowspan="1">13355</td></tr><tr class="passedodd"><td rowspan="1">com.makeMyTrip.qa.testCases.HomePageTestCase</td><td><a href="#m4">Search</a></td><td rowspan="1">1568044254515</td><td rowspan="1">21073</td></tr></tbody></table><h2>MakeMyTrip</h2><h3 id="m0">com.makeMyTrip.qa.testCases.FlightResultsPageTestCase#SelectFlightAndValidateTotal</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Clicked on Flight number 2<br/>Clicked on Flight number 3<br/>Selected Arrival flight Name: Spicejet |SG-6290Spicejet |SG-415<br/>Selected Arrival flight Name: ? 6,619<br/>Selected Arrival flight Name: Spicejet |SG-6933AirAsia |I5-308<br/>Selected Arrival flight Name: Re Check-in of Baggage required</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;splitVw-footer-left &apos;]&quot;}
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DESKTOP-6QUM1LC&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55526}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38), userDataDir=C:\Users\PC\AppData\Local\Temp\scoped_dir9376_29410}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.132, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: edd7523b93e3b83e51d10e7a3ef3a6d6
+*** Element info: {Using=xpath, value=//div[@class=&apos;splitVw-footer-left &apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.getText(Unknown Source)
+	at com.makeMyTrip.qa.pages.FlightResultsPage.ValidateSelectet_DepartureFlightDetails(FlightResultsPage.java:176)
+	at com.makeMyTrip.qa.testCases.FlightResultsPageTestCase.Validate_SelectedFlightDetails(FlightResultsPageTestCase.java:93)
+	at com.makeMyTrip.qa.testCases.FlightResultsPageTestCase.SelectFlightAndValidateTotal(FlightResultsPageTestCase.java:86)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.makeMyTrip.qa.testCases.FlightResultsPageTestCase#ValidateNumberOfFlightWith_NonStop</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">***********No of flights after NonStop filter applied***************<br/>Scrolling up to view element from start..<br/>Clearing applied filters..</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[@for=&apos;collapsed_057131c6-5289-4812-a26f-835d6435512c&apos;]//span[@class=&apos;check&apos;]&quot;}
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DESKTOP-6QUM1LC&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55526}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38), userDataDir=C:\Users\PC\AppData\Local\Temp\scoped_dir9376_29410}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.132, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: edd7523b93e3b83e51d10e7a3ef3a6d6
+*** Element info: {Using=xpath, value=//label[@for=&apos;collapsed_057131c6-5289-4812-a26f-835d6435512c&apos;]//span[@class=&apos;check&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.makeMyTrip.qa.pages.FlightResultsPage.StopsFlights(FlightResultsPage.java:100)
+	at com.makeMyTrip.qa.testCases.FlightResultsPageTestCase.ValidateNumberOfFlightWith_NonStop(FlightResultsPageTestCase.java:39)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.makeMyTrip.qa.testCases.FlightResultsPageTestCase#ValidateNumberOfFlightWith_OneStop</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">***********No of flights after One STOP filter applied****************<br/>Scrolling up to view element from start..<br/>Clearing applied filters..</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[@for=&apos;collapsed_86472794-bf4a-4f89-a010-f2337dc15a1b&apos;]//span[@class=&apos;check&apos;]&quot;}
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DESKTOP-6QUM1LC&apos;, ip: &apos;192.168.0.12&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55526}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38), userDataDir=C:\Users\PC\AppData\Local\Temp\scoped_dir9376_29410}, takesHeapSnapshot=true, unhandledPromptBehavior=ignore, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.132, browserConnectionEnabled=false, proxy=Proxy(), nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: edd7523b93e3b83e51d10e7a3ef3a6d6
+*** Element info: {Using=xpath, value=//label[@for=&apos;collapsed_86472794-bf4a-4f89-a010-f2337dc15a1b&apos;]//span[@class=&apos;check&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.makeMyTrip.qa.pages.FlightResultsPage.StopsFlights(FlightResultsPage.java:105)
+	at com.makeMyTrip.qa.testCases.FlightResultsPageTestCase.ValidateNumberOfFlightWith_OneStop(FlightResultsPageTestCase.java:51)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.makeMyTrip.qa.testCases.FlightResultsPageTestCase#numberofFlights</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Scrolling down to load complete Page content..</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">com.makeMyTrip.qa.testCases.HomePageTestCase#Search</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Clicked on Menu Flights<br/>Select on Stopway filter two<br/>Enter Depature City Delhi<br/>waiting to populate Auto Suggestion after entering City..<br/>selected city...<br/>Enter Arrival City Bangalore<br/>waiting to populate Auto Suggestion after entering City..<br/>selected city...<br/>Clicking on date 10/September/2019<br/>Clicking on date 17/September/2019</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

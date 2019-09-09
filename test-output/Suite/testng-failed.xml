@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="MakeMyTrip(failed)">
+    <classes>
+      <class name="com.makeMyTrip.qa.testCases.FlightResultsPageTestCase">
+        <methods>
+          <include name="Setup"/>
+          <include name="ValidateNumberOfFlightWith_OneStop"/>
+          <include name="tearDown"/>
+          <include name="SelectFlightAndValidateTotal"/>
+          <include name="ValidateNumberOfFlightWith_NonStop"/>
+        </methods>
+      </class> <!-- com.makeMyTrip.qa.testCases.FlightResultsPageTestCase -->
+    </classes>
+  </test> <!-- MakeMyTrip(failed) -->
+</suite> <!-- Failed suite [Suite] -->
